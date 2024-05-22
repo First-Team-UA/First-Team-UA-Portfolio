@@ -1,12 +1,11 @@
 
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; 
+import { Route, Routes } from 'react-router-dom'; 
 import Header from './Header/Header';
 import Home from './Home/HomePage';
 import Portfolio from './Portfolio/Portfolio';
 
 const App = () => {
   return (
-    <Router>
       <div>
         <Header />
         <Routes>
@@ -14,7 +13,6 @@ const App = () => {
           <Route path="/portfolio" element={<Portfolio />} />
         </Routes>
       </div>
-    </Router>
   );
 };
 
