@@ -1,6 +1,7 @@
 {
   "name": "first-team-ua-portfolio",
   "private": true,
+  "homepage": "https://first-team-ua.github.io/First-Team-UA-Portfolio/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
