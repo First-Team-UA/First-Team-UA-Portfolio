@@ -1,16 +1,21 @@
 
-import './App.css'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; 
+import Header from './Header/Header';
+import Home from './Home/HomePage';
+import Portfolio from './Portfolio/Portfolio';
 
-function App() {
-
-
+const App = () => {
   return (
-
+    <Router>
       <div>
-     <h1>My app</h1>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+        </Routes>
       </div>
+    </Router>
+  );
+};
 
-  )
-}
-
-export default App
+export default App;
