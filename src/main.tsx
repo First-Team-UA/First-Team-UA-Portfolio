@@ -9,5 +9,5 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     <BrowserRouter basename='/First-Team-UA-Portfolio'>
     <App />
     </BrowserRouter>
-  </React.StrictMode>,
+  </React.StrictMode>
 )

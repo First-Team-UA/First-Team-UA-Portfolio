@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -5,8 +6,8 @@ const Header = () => {
       <h1>Мій сайт</h1>
       <nav>
         <ul>
-          <li><a href="/">Домашня</a></li>
-          <li><a href="/portfolio">Портфоліо</a></li>
+          <li><NavLink to="/">Домашня</NavLink></li>
+          <li><NavLink to="/portfolio">Портфоліо</NavLink></li>
         </ul>
       </nav>
     </div>
