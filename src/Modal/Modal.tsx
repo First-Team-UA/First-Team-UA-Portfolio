@@ -1,11 +1,10 @@
-// src/Modal/Modal.tsx
-import React, { ReactNode } from 'react';
-import './Modal.css'; // Optional: Add some CSS for styling
+
+import React from 'react';
+import './Modal.css';
 
 interface ModalProps {
   isOpen: boolean;
   onClose: () => void;
-  children: ReactNode;
 }
 
 const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
@@ -15,7 +14,6 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
     <div className="modal-overlay">
       <div className="modal">
         <button className="close-button" onClick={onClose}>Close</button>
-        {/* {children} */}
         <img src="" alt="Photo Ostap" />
         <h1>Kryven Ostap</h1>
         <h2>Front-End developer</h2>

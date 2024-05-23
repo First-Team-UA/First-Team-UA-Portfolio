@@ -1,8 +1,7 @@
-// src/Footer/Footer.js
-import { useState } from 'react';
+import React, { useState } from 'react';
 import Modal from '../Modal/Modal';
 
-const Footer = () => {
+const Footer: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleOpenModal = () => {
