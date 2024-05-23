@@ -45,7 +45,7 @@ const Footer: React.FC = () => {
 
   const handleOpenModal = () => {
     setIsModalOpen(true);
-    setCurrentIndex(0); 
+    setCurrentIndex(0);
   };
 
   const handleCloseModal = () => {
