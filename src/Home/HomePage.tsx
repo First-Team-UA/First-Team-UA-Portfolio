@@ -2,10 +2,12 @@ import { useState } from 'react';
 import "./HomePage.css";
 
 const Home = () => {
+
   const [activePerson, setActivePerson] = useState<number | null>(0);
 
+
   const handleButtonClick = (personIndex: number) => {
-    setActivePerson(activePerson === personIndex ? null : personIndex);
+    setActivePerson(personIndex);
   };
 
   return (
