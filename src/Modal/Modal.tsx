@@ -1,25 +1,20 @@
-
-import React from 'react';
+import React, { ReactNode } from 'react';
 import './Modal.css';
 
 interface ModalProps {
   isOpen: boolean;
   onClose: () => void;
+  children: ReactNode;
 }
 
-const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
+const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
   if (!isOpen) return null;
 
   return (
     <div className="modal-overlay">
       <div className="modal">
         <button className="close-button" onClick={onClose}>Close</button>
-        <img src="" alt="Photo Ostap" />
-        <h1>Kryven Ostap</h1>
-        <h2>Front-End developer</h2>
-        <p>Info - Ostap</p>
-        <button> Back </button>
-        <button> Next </button>
+        {children}
       </div>
     </div>
   );
