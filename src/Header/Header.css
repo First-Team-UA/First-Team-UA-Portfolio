@@ -18,12 +18,7 @@ display: flex;
   border: solid orange 1px;
   background-color: transparent;
 }
-nav{
-    margin-right: 0;
-}
+
 .NavLink-home {
     margin-right: 20px;
-}
-.NavLink-portfolio {
-margin-right: 100px;
 }
