@@ -52,11 +52,13 @@ const LanguageSwitcher: React.FC = () => {
     { value: 'ua', label: 'Українська' },
   ];
 
+  const defaultLanguage = languageOptions.find((option) => option.value === 'en'); // Значення за замовчуванням - англійська
+
   return (
     <div style={{ width: '200px' }}>
       <Select
         options={languageOptions}
-        defaultValue={languageOptions.find((option) => option.value === i18n.language)}
+        defaultValue={defaultLanguage}
         onChange={(selectedOption) => changeLanguage(selectedOption!.value)}
         styles={customStyles}
       />
