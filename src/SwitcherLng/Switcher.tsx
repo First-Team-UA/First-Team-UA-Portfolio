@@ -34,6 +34,7 @@ const LanguageSwitcher: React.FC = () => {
       border: 'none',
       width: '52px',
       marginRight: '60px',
+      transition: '1s',
     }),
     option: (provided, state) => ({
       ...provided,
@@ -41,15 +42,18 @@ const LanguageSwitcher: React.FC = () => {
       color: state.isSelected ? '#DDD' : '#DDD',
       cursor: 'pointer',
       padding: '10px',
+      transition: '1s',
       borderBottom: '1px solid orange',
       '&:hover': {
         backgroundColor: 'orange',
+        transition: '1s',
         color: '#DDD',
       },
     }),
     singleValue: (provided) => ({
       ...provided,
       color: '#DDD',
+      transition: '1s',
     }),
     menu: (provided) => ({
       ...provided,
@@ -58,6 +62,7 @@ const LanguageSwitcher: React.FC = () => {
       padding: '0',
       borderRadius: '5px',
       marginTop: '2px',
+      transition: '1s',
       border:'1px solid orange'
     }),
     menuList: (provided) => ({
