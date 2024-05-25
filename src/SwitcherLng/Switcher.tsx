@@ -10,10 +10,10 @@ interface OptionType {
 const LanguageSwitcher: React.FC = () => {
   const { i18n } = useTranslation();
 
-  // Зчитуємо обрану мову з localStorage
+
   const storedLanguage = localStorage.getItem('i18nextLng');
 
-  // Встановлюємо англійську мову, якщо мова не була обрана раніше
+
   useEffect(() => {
     if (!storedLanguage) {
       i18n.changeLanguage('en');
