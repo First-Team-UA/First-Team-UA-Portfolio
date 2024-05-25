@@ -29,35 +29,44 @@ const LanguageSwitcher: React.FC = () => {
   const customStyles: StylesConfig<OptionType, false> = {
     control: (provided) => ({
       ...provided,
-      backgroundColor: 'black',
-      color: 'orange',
-      border: '1px solid orange',
-      borderRadius: '5px',
-      width: '150px',
+      backgroundColor: 'transparent',
+      color: '#DDD',
+      border: 'none',
+      width: '52px',
+      marginRight: '60px',
     }),
     option: (provided, state) => ({
       ...provided,
-      backgroundColor: state.isSelected ? 'orange' : 'black',
-      color: state.isSelected ? 'black' : 'orange',
+      backgroundColor: state.isSelected ? 'orange' : 'none',
+      color: state.isSelected ? '#DDD' : '#DDD',
       cursor: 'pointer',
       padding: '10px',
+      borderBottom: '1px solid orange',
+      '&:hover': {
+        backgroundColor: 'orange',
+        color: '#DDD',
+      },
     }),
     singleValue: (provided) => ({
       ...provided,
-      color: 'orange',
+      color: '#DDD',
     }),
     menu: (provided) => ({
       ...provided,
+      width: '52px',
       backgroundColor: 'black',
       padding: '0',
       borderRadius: '5px',
       marginTop: '2px',
+      border:'1px solid orange'
     }),
     menuList: (provided) => ({
       ...provided,
       padding: '0',
+
     }),
-    indicatorSeparator: () => ({ display: 'none' }), // Remove the indicator separator
+    dropdownIndicator: () => ({ display: 'none' }), 
+    indicatorSeparator: () => ({ display: 'none' }), 
   };
   
 
@@ -69,7 +78,11 @@ const LanguageSwitcher: React.FC = () => {
   const defaultLanguage = languageOptions.find((option) => option.value === storedLanguage) || languageOptions[0];
 
   return (
-    <div style={{ width: '20px' }}>
+    <div style={{ 
+        width: '52px',
+        marginRight: '60px',
+        marginTop: '31px'
+        }}>
       <Select
         options={languageOptions}
         defaultValue={defaultLanguage}
