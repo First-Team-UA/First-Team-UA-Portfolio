@@ -57,17 +57,19 @@ const LanguageSwitcher: React.FC = () => {
       ...provided,
       padding: '0',
     }),
+    indicatorSeparator: () => ({ display: 'none' }), // Remove the indicator separator
   };
+  
 
   const languageOptions: OptionType[] = [
-    { value: 'en', label: 'English' },
-    { value: 'ua', label: 'Українська' },
+    { value: 'en', label: 'EN' },
+    { value: 'ua', label: 'UA' },
   ];
 
   const defaultLanguage = languageOptions.find((option) => option.value === storedLanguage) || languageOptions[0];
 
   return (
-    <div style={{ width: '200px' }}>
+    <div style={{ width: '20px' }}>
       <Select
         options={languageOptions}
         defaultValue={defaultLanguage}

@@ -22,3 +22,11 @@ display: flex;
 .NavLink-home {
     margin-right: 20px;
 }
+.Logo {
+    margin-top: 36px;
+    margin-left: 60px;
+}
+.LogoImg {
+    width: 60px;
+    height: 30.18px;
+}
