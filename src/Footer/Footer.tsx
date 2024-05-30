@@ -1,44 +1,7 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import Modal from '../Modal/Modal';
-
-const modalsContent = [
-  {
-    imgSrc: '',
-    imgAlt: 'Photo Ostap',
-    title: 'Kryven Ostap',
-    subtitle: 'Front-End Developer',
-    info: 'Info - Ostap',
-  },
-  {
-    imgSrc: '',
-    imgAlt: 'Photo Alex',
-    title: 'Alex Johnson',
-    subtitle: 'Back-End Developer',
-    info: 'Info - Alex',
-  },
-  {
-    imgSrc: '',
-    imgAlt: 'Photo Maria',
-    title: 'Maria Garcia',
-    subtitle: 'Full-Stack Developer',
-    info: 'Info - Maria',
-  },
-  {
-    imgSrc: '',
-    imgAlt: 'Photo John',
-    title: 'John Doe',
-    subtitle: 'Designer',
-    info: 'Info - John',
-  },
-  {
-    imgSrc: '',
-    imgAlt: 'Photo Jane',
-    title: 'Jane Smith',
-    subtitle: 'Project Manager',
-    info: 'Info - Jane',
-  }
-];
+import modalsContent from '../Developer/OurTeam/our-team.json';
 
 const Footer: React.FC = () => {
   const { t } = useTranslation();
