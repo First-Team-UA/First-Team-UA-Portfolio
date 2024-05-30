@@ -1,6 +1,6 @@
 import { NavLink, useLocation } from "react-router-dom";
 import "./Header.css";
-import LanguageSwitcher from "../SwitcherLng/Switcher";
+import LanguageSwitcher from "../Language/SwitcherLng/Switcher";
 import logo from "./logo.svg";
 
 const Header = () => {

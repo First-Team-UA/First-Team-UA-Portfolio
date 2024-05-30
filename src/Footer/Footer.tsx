@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import Modal from '../Modal/Modal';
+import Modal from './Modal/Modal';
 import modalsContent from '../Developer/OurTeam/our-team.json';
 
 const Footer: React.FC = () => {

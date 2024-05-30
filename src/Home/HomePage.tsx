@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import "./HomePage.css";
 import { useTranslation } from 'react-i18next';
+import projects from '../Developer/Projects/projects.json';
 import reviews from '../Developer/Reviews/reviews.json';
-
+import "./HomePage.css";
 
 const Home = () => {
   const { t } = useTranslation();
@@ -11,6 +11,8 @@ const Home = () => {
   const handleButtonClick = (personIndex: number) => {
     setActivePerson(personIndex);
   };
+
+  const newProjects = projects.filter(project => project.status === "new");
 
   return (
     <div>
@@ -25,30 +27,16 @@ const Home = () => {
         <h1 className="title">New projects</h1>
         <p>Here you can see our new projects</p>
         <ul>
-          <li>
-            <img src="" alt="photo" />
-            <h1>Title projects</h1>
-            <p>our project</p>
-            <button>Open</button>
-          </li>
-          <li>
-            <img src="" alt="photo" />
-            <h1>Title projects</h1>
-            <p>our project</p>
-            <button>Open</button>
-          </li>
-          <li>
-            <img src="" alt="photo" />
-            <h1>Title projects</h1>
-            <p>our project</p>
-            <button>Open</button>
-          </li>
-          <li>
-            <img src="" alt="photo" />
-            <h1>Title projects</h1>
-            <p>our project</p>
-            <button>Open</button>
-          </li>
+          {newProjects.map((project, index) => (
+            <li key={index}>
+              <img src={project.imgSrc} alt={project.imgAlt} />
+              <h1>{project.title}</h1>
+              <p>{project.description}</p>
+              <a href={project.url} target="_blank" rel="noopener noreferrer">
+                <button>Open</button>
+              </a>
+            </li>
+          ))}
         </ul>
       </section>
 

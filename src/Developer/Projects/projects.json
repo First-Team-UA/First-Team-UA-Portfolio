@@ -1,0 +1,66 @@
+[
+  {
+    "imgSrc": "",
+    "imgAlt": "Photo Project 1",
+    "title": "Project 1",
+    "description": "Our project 1",
+    "status": "new",
+    "url": "https://example.com/project1"
+  },
+  {
+    "imgSrc": "",
+    "imgAlt": "Photo Project 2",
+    "title": "Project 2",
+    "description": "Our project 2",
+    "status": "new",
+    "url": "https://example.com/project2"
+  },
+  {
+    "imgSrc": "",
+    "imgAlt": "Photo Project 3",
+    "title": "Project 3",
+    "description": "Our project 3",
+    "status": "new",
+    "url": "https://example.com/project3"
+  },
+  {
+    "imgSrc": "",
+    "imgAlt": "Photo Project 4",
+    "title": "Project 4",
+    "description": "Our project 4",
+    "status": "new",
+    "url": "https://example.com/project4"
+  },
+  {
+    "imgSrc": "",
+    "imgAlt": "Photo Project 5",
+    "title": "Project 5",
+    "description": "Our project 5",
+    "status": "projects",
+    "url": "https://example.com/project5"
+  },
+  {
+    "imgSrc": "",
+    "imgAlt": "Photo Project 6",
+    "title": "Project 6",
+    "description": "Our project 6",
+    "status": "projects",
+    "url": "https://example.com/project6"
+  },
+  {
+    "imgSrc": "",
+    "imgAlt": "Photo Project 7",
+    "title": "Project 7",
+    "description": "Our project 7",
+    "status": "projects",
+    "url": "https://example.com/project7"
+  },
+  {
+    "imgSrc": "",
+    "imgAlt": "Photo Project 8",
+    "title": "Project 8",
+    "description": "Our project 8",
+    "status": "projects",
+    "url": "https://example.com/project8"
+  }
+]
